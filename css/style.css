@@ -1,0 +1,285 @@
+/* -----------------------  GENERAL  --------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;900&display=swap');
+
+
+/* rem */
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* horizontal overflow */
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+}
+
+/* -----------------------  GRID  --------------------------- */
+
+#body {
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: auto;
+    grid-template-areas: "header" "nav" "main" "footer"; 
+    
+}
+
+
+/* -----------------------  HEADER  --------------------------- */
+
+#header {
+    grid-area: header;
+    background-color: #ffffff;
+}
+
+
+.signin_Label--letters {
+    font-weight: 400;
+    color: #000000;
+    font-size: .85rem;
+
+}
+
+
+/* -----------------------  NAV  --------------------------- */
+#nav {
+    grid-area: nav;
+
+}
+
+.navHeight {
+    height: 4em;
+}
+
+.bg-nav {
+    background-color: #000000;
+}
+
+.nav_LabelActive-font {
+    color: #ffffffaf;
+    font-weight: 400;
+    font-size: .85rem;
+}
+
+.nav_Labels-font {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: .85rem;
+}
+
+.appearHideSearchBar {
+    display: flex;
+}
+
+.hideAppearSearchBar {
+    display: none;
+}
+
+
+.collapsed_nav-item {
+    text-align: center;
+}
+
+
+.searchButtonSmall {
+    background: url('../img/SearchButton.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3em;
+   
+}
+
+#nav input[type=search]{
+    font-weight: 300;
+    font-size: .85rem;
+}
+
+.cartButton {
+    background: url('../img/CartButton.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3em;
+   
+}
+
+/* -----------------------  FOOTER  --------------------------- */
+#footer {
+
+    grid-area: footer;
+
+}
+
+
+
+/* -----------------------  INDEX  --------------------------- */
+
+
+    /* -----------------------  MAIN  --------------------------- */
+    #main {
+        grid-area: main;
+        
+    }
+
+
+
+
+/* -----------------------  MEDIA QUERY  --------------------------- */
+/* // Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 375px){
+
+    /* HEADER */
+    
+    .signin_Label--letters {
+        font-size: 1rem;
+    }
+     /* NAV */
+    
+    .nav_LabelActive-font {
+        font-size: 1rem;
+    }
+    
+    .nav_Labels-font {
+        font-size: 1rem;
+}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px){ 
+
+    /* HEADER */
+    
+    .signin_Label--letters {
+        font-size: 1.2rem;
+    }
+
+    /* NAV */
+
+    .navHeight {
+        height: 7em;
+    }
+
+    .appearHideSearchBar {
+        display: none;
+        border: none;
+    }
+
+    .hideAppearSearchBar {
+        display: flex;
+        background-color: #000000;
+    }
+
+    .searchButton {
+        background: url('../img/SearchButton.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 4em;
+       
+    }
+
+    .nav_LabelActive-font {
+        font-size: 1.2rem;
+    }
+    
+    .nav_Labels-font {
+        font-size: 1.2rem;
+    }
+
+    #nav input[type=search] {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+    
+
+    .cartButton {
+        background: url('../img/CartButton.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 4em;
+       
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* HEADER */
+    
+    .signin_Label--letters {
+        font-size: 1.5rem;
+    }
+    
+    .signin_Label--letters:hover {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #000000;
+    }
+
+    /* NAV */
+    .nav_LabelActive-font {
+        font-size: 1.5rem;
+    }
+    
+    .nav_Labels-font {
+        font-size: 1.5rem;
+    }
+
+    #nav ul li a{
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+    #nav ul li a:hover {
+        text-decoration: none;
+        color: white;
+        font-weight: 900;
+        background-size: 95% 2px;
+    }
+
+    #nav input[type=search] {
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+
+
+  }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { 
+    
+    
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) { 
+
+    /* HEADER */
+    
+    .signin_Label--letters {
+        font-size: 1.6rem;
+    }
+    
+    .signin_Label--letters:hover {
+        font-size: 1.6rem;
+    }
+
+    /* NAV */
+    .nav_LabelActive-font {
+        font-size: 1.6rem;
+    }
+    
+    .nav_Labels-font {
+        font-size: 1.6rem;
+    }
+
+    #nav input[type=search] {
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
+
+
+
+} 
