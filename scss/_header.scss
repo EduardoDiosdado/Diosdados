@@ -1,0 +1,32 @@
+
+#header {
+    grid-area: header;
+    background-color: $white;
+
+    .signin_Label--letters {
+        font-weight: $signin-Weight;
+        &:hover{
+            font-weight: $signin-Weight-hover;
+        }
+        color: $black;
+        font-size: map-get($map:$signin-Size,$key:'xs');
+        @include respond-to('sm'){
+            font-size: map-get($map:$signin-Size,$key:'sm');
+        }
+        @include respond-to('md'){
+            font-size: map-get($map:$signin-Size,$key:'md');
+        }
+        @include respond-to('lg'){
+            font-size: map-get($map:$signin-Size,$key:'lg');
+        }
+        @include respond-to('xl'){
+            font-size: map-get($map:$signin-Size,$key:'xl');
+        }
+        @include respond-to('xxl'){
+            font-size: map-get($map:$signin-Size,$key:'xxl');
+        }
+    }
+
+}
+
+

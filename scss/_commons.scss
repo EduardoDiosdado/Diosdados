@@ -1,0 +1,29 @@
+//Root
+html {
+    font-size: $root;
+    font-family: $fontMain;
+}
+
+//body
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+}
+
+
+//GRID
+#body {
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: auto;
+    grid-template-areas: "header" "nav" "mainI" "footer"; 
+    
+}
+
+#bodyAboutUs {
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: auto;
+    grid-template-areas: "header" "nav" "main_aboutus" "footer"; 
+}
