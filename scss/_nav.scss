@@ -2,7 +2,10 @@
     grid-area: nav;
     z-index: 100;
     background-color: $black;
-
+    @include respond-to('md'){
+        height: 9vh;
+    }
+   
 
     .nav_LabelActive-font {
         color: $greyActive;

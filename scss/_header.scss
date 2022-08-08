@@ -2,6 +2,7 @@
 #header {
     grid-area: header;
     background-color: $white;
+    height: 13.5vh;
 
     .signin_Label--letters {
         font-weight: $signin-Weight;

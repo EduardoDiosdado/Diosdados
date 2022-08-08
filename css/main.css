@@ -27,6 +27,7 @@ body {
 #header {
   grid-area: header;
   background-color: #ffffff;
+  height: 13.5vh;
 }
 #header .signin_Label--letters {
   font-weight: 400;
@@ -66,6 +67,11 @@ body {
   grid-area: nav;
   z-index: 100;
   background-color: #000000;
+}
+@media (min-width: 768px) {
+  #nav {
+    height: 9vh;
+  }
 }
 #nav .nav_LabelActive-font, #nav .nav_Labels-font {
   color: rgba(255, 255, 255, 0.6862745098);
@@ -477,17 +483,22 @@ body {
 
 #main_aboutus {
   grid-area: main_aboutus;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-around;
-  z-index: 1;
 }
 #main_aboutus .aboutusLand {
   position: relative;
   text-align: center;
-  height: 25vh;
+  height: 30vh;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  #main_aboutus .aboutusLand {
+    height: 60vh;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .aboutusLand {
+    height: 80vh;
+  }
 }
 #main_aboutus .aboutusVideo--styling {
   height: auto;
@@ -504,42 +515,129 @@ body {
   font-size: 3rem;
   font-weight: 900;
 }
+@media (min-width: 576px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 3.4rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 3.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 4rem;
+  }
+}
 #main_aboutus .aboutUsText {
-  height: 20vh;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  justify-content: space-around;
+  height: 95vh;
 }
 #main_aboutus .aboutDiosdados--font {
-  font-size: 1.7rem;
   font-weight: 600;
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 3rem;
+  }
 }
 #main_aboutus .aboutUsDescp--font {
-  font-size: 1.3rem;
   font-weight: 300;
+  font-size: 1rem;
 }
-#main_aboutus .mission {
-  padding-top: 1rem;
+@media (min-width: 576px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.8rem;
+  }
+}
+#main_aboutus .mission, #main_aboutus .vision {
+  height: 95vh;
   background-color: #F4F3F5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#main_aboutus .missionText {
-  padding: 3rem;
 }
 #main_aboutus .missionIMG--sizing {
-  height: auto;
-  width: 100vw;
+  width: 100%;
 }
-#main_aboutus .missionHeader--font {
-  font-size: 1.7rem;
+#main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
   font-weight: 600;
+  font-size: 1.5rem;
 }
-#main_aboutus .missionHr--styling {
+@media (min-width: 576px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 3rem;
+  }
+}
+#main_aboutus .missionHr--styling, #main_aboutus .visionHr--styling {
   border: 0;
   border-top: 0.2rem solid #ED181F;
   display: inline-block;
@@ -547,39 +645,80 @@ body {
   padding: 0;
   width: 7rem;
 }
-#main_aboutus .missionDescp--font {
-  font-size: 1.3rem;
+#main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
   font-weight: 300;
+  font-size: 1rem;
 }
-#main_aboutus .vision {
-  background-color: #F4F3F5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 576px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.2rem;
+  }
 }
-#main_aboutus .visionText {
-  padding: 3rem;
+@media (min-width: 768px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.8rem;
+  }
 }
 #main_aboutus .visionIMG--sizing {
-  height: auto;
-  width: 100vw;
+  width: 100%;
 }
-#main_aboutus .visionHeader--font {
-  font-size: 1.7rem;
-  font-weight: 600;
+#main_aboutus .textSection {
+  display: flex;
+  flex-direction: start;
+  height: 40vh;
 }
-#main_aboutus .visionHr--styling {
-  border: 0;
-  border-top: 0.2rem solid #ED181F;
-  display: inline-block;
-  margin: 1rem 0rem;
-  padding: 0;
-  width: 7rem;
-}
-#main_aboutus .visionDescp--font {
-  font-size: 1.3rem;
+#main_aboutus .textSection_Paragraphs--font {
+  width: 35%;
   font-weight: 300;
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.8rem;
+  }
+}
+#main_aboutus .textSectionMobileHide {
+  display: none;
+}
+@media (min-width: 768px) {
+  #main_aboutus .textSectionMobileHide {
+    display: flex;
+  }
 }
 
 #footer {

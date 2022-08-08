@@ -17,9 +17,17 @@ body {
   grid-template-areas: "header" "nav" "mainI" "footer";
 }
 
+#bodyAboutUs {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: auto;
+  grid-template-areas: "header" "nav" "main_aboutus" "footer";
+}
+
 #header {
   grid-area: header;
   background-color: #ffffff;
+  height: 13.5vh;
 }
 #header .signin_Label--letters {
   font-weight: 400;
@@ -59,6 +67,11 @@ body {
   grid-area: nav;
   z-index: 100;
   background-color: #000000;
+}
+@media (min-width: 768px) {
+  #nav {
+    height: 9vh;
+  }
 }
 #nav .nav_LabelActive-font, #nav .nav_Labels-font {
   color: rgba(255, 255, 255, 0.6862745098);
@@ -465,6 +478,246 @@ body {
   }
 }
 
+#main_aboutus {
+  grid-area: main_aboutus;
+}
+#main_aboutus .aboutusLand {
+  position: relative;
+  text-align: center;
+  height: 30vh;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  #main_aboutus .aboutusLand {
+    height: 60vh;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .aboutusLand {
+    height: 80vh;
+  }
+}
+#main_aboutus .aboutusVideo--styling {
+  height: auto;
+  width: 100vw;
+}
+#main_aboutus .aboutusHeader--font {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 900;
+}
+@media (min-width: 576px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 3.4rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 3.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .aboutusHeader--font {
+    font-size: 4rem;
+  }
+}
+#main_aboutus .aboutUsText {
+  height: 95vh;
+}
+#main_aboutus .aboutDiosdados--font {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .aboutDiosdados--font {
+    font-size: 3rem;
+  }
+}
+#main_aboutus .aboutUsDescp--font {
+  font-weight: 300;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .aboutUsDescp--font {
+    font-size: 1.8rem;
+  }
+}
+#main_aboutus .mission, #main_aboutus .vision {
+  height: 95vh;
+  background-color: #F4F3F5;
+}
+#main_aboutus .missionIMG--sizing {
+  width: 100%;
+}
+#main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .missionHeader--font, #main_aboutus .visionHeader--font {
+    font-size: 3rem;
+  }
+}
+#main_aboutus .missionHr--styling, #main_aboutus .visionHr--styling {
+  border: 0;
+  border-top: 0.2rem solid #ED181F;
+  display: inline-block;
+  margin: 1rem 0rem;
+  padding: 0;
+  width: 7rem;
+}
+#main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+  font-weight: 300;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .missionDescp--font, #main_aboutus .visionDescp--font {
+    font-size: 1.8rem;
+  }
+}
+#main_aboutus .visionIMG--sizing {
+  width: 100%;
+}
+#main_aboutus .textSection {
+  display: flex;
+  flex-direction: start;
+  height: 40vh;
+}
+#main_aboutus .textSection_Paragraphs--font {
+  width: 35%;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_aboutus .textSection_Paragraphs--font {
+    font-size: 1.8rem;
+  }
+}
+#main_aboutus .textSectionMobileHide {
+  display: none;
+}
+@media (min-width: 768px) {
+  #main_aboutus .textSectionMobileHide {
+    display: flex;
+  }
+}
+
 #footer {
   grid-area: footer;
   background-color: #000000;
@@ -608,6 +861,14 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
 }
 
  h5, .h5, h3, .h3, h2, .h2, h1, .h1 {
@@ -843,9 +1104,17 @@ iframe {
   }
 }
 @media (min-width: 768px) {
+  .col-md-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+  }
+  .col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
   }
   .col-md-6 {
     flex: 0 0 auto;
@@ -1258,6 +1527,10 @@ iframe {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
 }
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
 
 .card-body {
   flex: 1 1 auto;
@@ -1394,8 +1667,24 @@ iframe {
   justify-content: space-evenly !important;
 }
 
+.align-items-center {
+  align-items: center !important;
+}
+
 .align-items-stretch {
   align-items: stretch !important;
+}
+
+.order-1 {
+  order: 1 !important;
+}
+
+.order-2 {
+  order: 2 !important;
+}
+
+.order-3 {
+  order: 3 !important;
 }
 
 .mx-3 {
@@ -1438,6 +1727,10 @@ iframe {
   margin-bottom: 1rem !important;
 }
 
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
 .p-2 {
   padding: 0.5rem !important;
 }
@@ -1459,8 +1752,16 @@ iframe {
   padding-bottom: 0 !important;
 }
 
+.lh-lg {
+  line-height: 2 !important;
+}
+
 .text-end {
   text-align: right !important;
+}
+
+.text-wrap {
+  white-space: normal !important;
 }
 
 .text-nowrap {
@@ -1477,6 +1778,15 @@ iframe {
 @media (min-width: 768px) {
   .justify-content-md-end {
     justify-content: flex-end !important;
+  }
+  .order-md-1 {
+    order: 1 !important;
+  }
+  .order-md-2 {
+    order: 2 !important;
+  }
+  .order-md-3 {
+    order: 3 !important;
   }
   .mx-md-0 {
     margin-right: 0 !important;
