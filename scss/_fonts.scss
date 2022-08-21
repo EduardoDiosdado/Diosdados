@@ -5,11 +5,11 @@ $fontMain:'Roboto', sans-serif;
 // header 
 
 $signin-Size: (
-    'xs':  .85rem,
-    'sm':  1rem,
-    'md': 1.15rem,
-    'lg':  1.3rem,
-    'xl': 1.45rem,
+    'xs':  1.08rem,
+    'sm':  1.2rem,
+    'md': 1.3rem,
+    'lg':  1.45rem,
+    'xl': 1.5rem,
     'xxl':  1.6rem
 );
 $signin-Weight: 400;
@@ -47,6 +47,15 @@ $footertext-Size: (
     'xxl':  1.75rem
 );
 $footertext-Weight: 200;
+
+$footerSelection-Size: (
+    'xs':  1rem,
+    'sm':  1.15rem,
+    'md': 1.3rem,
+    'lg':  1.3rem,
+    'xl': 1.4rem,
+    'xxl':  1.45rem
+);
 
 
 //index main
@@ -149,3 +158,24 @@ $aboutusText-Size: (
 
 $aboutusText-Weight: 300;
 
+//index categories
+$productHeader-Size: (
+    'xs':  1.5rem,
+    'sm':  1.8rem,
+    'md': 2.1rem,
+    'lg':  2.4rem,
+    'xl': 2.7rem,
+    'xxl':  3rem
+);
+$productHeader-Weight: 500;
+
+
+$productText-Size:(
+    'xs':  1.150rem,
+    'sm':  1.150rem,
+    'md': 1.5rem,
+    'lg':  1.5rem,
+    'xl': 1.8rem,
+    'xxl':  1.8rem
+);
+$productText-Weight: 300;

@@ -1,0 +1,122 @@
+#bodyCategories {
+    grid-area: main_categories;
+
+
+    .casualLandImg {
+        width: 100%;
+
+        @include respond-to('md') {
+            width: 90%;
+
+        }
+    }
+
+    .cardHidder {
+        display: none;
+
+        @include respond-to('md') {
+            display: flex;
+        }
+    }
+
+    .card-title {
+        font-weight: $productHeader-Weight;
+        color: $black;
+        font-size: map-get($map:$productHeader-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$productHeader-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$productHeader-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$productHeader-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$productHeader-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$productHeader-Size, $key:'xxl');
+        }
+    }
+
+    .card-text {
+        font-weight: $productText-Weight;
+        color: $black;
+        font-size: map-get($map:$productText-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$productText-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$productText-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$productText-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$productText-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {}
+
+        }
+        .btn-Color {
+            background-color: $red;
+            font-size: map-get($map:$productText-Size, $key:'xs');
+
+            @include respond-to('sm') {
+                font-size: map-get($map:$productText-Size, $key:'sm');
+            }
+
+            @include respond-to('md') {
+                font-size: map-get($map:$productText-Size, $key:'md');
+            }
+
+            @include respond-to('lg') {
+                font-size: map-get($map:$productText-Size, $key:'lg');
+            }
+
+            @include respond-to('xl') {
+                font-size: map-get($map:$productText-Size, $key:'xl');
+            }
+
+            @include respond-to('xxl') {}
+
+            color: $black;
+        }
+
+        .cardWrapper {
+            @include respond-to('md') {
+                display: none;
+            }
+        }
+
+        .card-body {
+            height: 28vh;
+
+            @include respond-to('md') {
+                height: 25vh;
+            }
+            @include respond-to('xl') {
+                height: 20vh;
+            }
+
+        }
+
+        .imageWrapper {
+            img {
+                max-width: 100%;
+            }
+        }
+
+
+    }

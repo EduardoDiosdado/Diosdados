@@ -24,6 +24,13 @@ body {
   grid-template-areas: "header" "nav" "main_aboutus" "footer";
 }
 
+#bodyCategories {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: auto;
+  grid-template-areas: "header" "nav" "main_categories" "footer";
+}
+
 #header {
   grid-area: header;
   background-color: #ffffff;
@@ -32,29 +39,29 @@ body {
 #header .signin_Label--letters {
   font-weight: 400;
   color: #000000;
-  font-size: 0.85rem;
+  font-size: 1.08rem;
 }
 #header .signin_Label--letters:hover {
   font-weight: 600;
 }
 @media (min-width: 576px) {
   #header .signin_Label--letters {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 768px) {
   #header .signin_Label--letters {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 992px) {
   #header .signin_Label--letters {
-    font-size: 1.3rem;
+    font-size: 1.45rem;
   }
 }
 @media (min-width: 1200px) {
   #header .signin_Label--letters {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1400px) {
@@ -721,6 +728,127 @@ body {
   }
 }
 
+#bodyCategories {
+  grid-area: main_categories;
+}
+#bodyCategories .casualLandImg {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #bodyCategories .casualLandImg {
+    width: 90%;
+  }
+}
+#bodyCategories .cardHidder {
+  display: none;
+}
+@media (min-width: 768px) {
+  #bodyCategories .cardHidder {
+    display: flex;
+  }
+}
+#bodyCategories .card-title {
+  font-weight: 500;
+  color: #000000;
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  #bodyCategories .card-title {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) {
+  #bodyCategories .card-title {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 992px) {
+  #bodyCategories .card-title {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  #bodyCategories .card-title {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  #bodyCategories .card-title {
+    font-size: 3rem;
+  }
+}
+#bodyCategories .card-text {
+  font-weight: 300;
+  color: #000000;
+  font-size: 1.15rem;
+}
+@media (min-width: 576px) {
+  #bodyCategories .card-text {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 768px) {
+  #bodyCategories .card-text {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #bodyCategories .card-text {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #bodyCategories .card-text {
+    font-size: 1.8rem;
+  }
+}
+#bodyCategories .btn-Color {
+  background-color: #ED181F;
+  font-size: 1.15rem;
+  color: #000000;
+}
+@media (min-width: 576px) {
+  #bodyCategories .btn-Color {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 768px) {
+  #bodyCategories .btn-Color {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #bodyCategories .btn-Color {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #bodyCategories .btn-Color {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) {
+  #bodyCategories .cardWrapper {
+    display: none;
+  }
+}
+#bodyCategories .card-body {
+  height: 28vh;
+}
+@media (min-width: 768px) {
+  #bodyCategories .card-body {
+    height: 25vh;
+  }
+}
+@media (min-width: 1200px) {
+  #bodyCategories .card-body {
+    height: 20vh;
+  }
+}
+#bodyCategories .imageWrapper img {
+  max-width: 100%;
+}
+
 #footer {
   grid-area: footer;
   background-color: #000000;
@@ -763,6 +891,48 @@ body {
   #footer .socialMedia_IMG--sizing {
     width: 4rem;
     height: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  #footer .socialMedia_IMG--sizing {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #footer .socialMedia_IMG--sizing {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+#footer select[name] {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #000000;
+}
+@media (min-width: 576px) {
+  #footer select[name] {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 768px) {
+  #footer select[name] {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  #footer select[name] {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #footer select[name] {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1400px) {
+  #footer select[name] {
+    font-size: 1.45rem;
   }
 }
 
