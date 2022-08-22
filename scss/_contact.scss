@@ -1,0 +1,239 @@
+#main_contact {
+    grid-area: "main_contact";
+
+    .faq {
+        background-color: $white;
+
+        @include respond-to('md') {
+            width: 75%;
+        }
+    }
+
+
+    .faqHeader {
+        color: $black;
+        font-size: map-get($map:$FAQ-Size, $key:'xs');
+        font-weight: $FAQ-Weight;
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$FAQ-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$FAQ-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$FAQ-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$FAQ-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$FAQ-Size, $key:'xxl');
+        }
+    }
+
+
+
+    .faqTitles {
+
+        font-size: map-get($map:$faqHeader-Size, $key:'xs');
+        font-weight: $faqHeader-Weight;
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$faqHeader-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$faqHeader-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$faqHeader-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$faqHeader-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$faqHeader-Size, $key:'xxl');
+        }
+    }
+
+    .faqText {
+        font-size: map-get($map:$faqText-Size, $key:'xs');
+        font-weight: $faqText-Weight;
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$faqText-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$faqText-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$faqText-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$faqText-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$faqText-Size, $key:'xxl');
+        }
+    }
+
+    .contactBackground-Color {
+        background-color: $red;
+
+
+    }
+
+    .contact {
+        @extend .faqHeader;
+    }
+
+    .icon {
+        width: 3.8rem;
+        color: $black;
+
+        @include respond-to('sm') {
+            width: 4rem;
+        }
+
+        @include respond-to('md') {
+            width: 4.3rem;
+        }
+
+        @include respond-to('lg') {
+            width: 4.8rem;
+        }
+
+        @include respond-to('xl') {
+            width: 5.3rem;
+        }
+
+        @include respond-to('xxl') {
+            width: 5.6rem;
+        }
+    }
+
+    .contactTextBox {
+        width: 75%;
+    }
+
+    .contactText {
+        font-size: map-get($map:$contactText-Size, $key:'xs');
+        font-weight: $contactText-Weight;
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$contactText-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$contactText-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$contactText-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$contactText-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$contactText-Size, $key:'xxl');
+        }
+    }
+
+    .formBackground {
+        background-color: $grey;
+    }
+
+    .formHeader {
+        @extend .faqHeader;
+    }
+
+    .formTitles {
+        font-size: map-get($map:$formHeader-Size, $key:'xs');
+        font-weight: $formHeader-Weight;
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$formHeader-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$formHeader-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$formHeader-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$formHeader-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$formHeader-Size, $key:'xxl');
+        }
+    }
+
+    .formText {
+        font-size: map-get($map:$formText-Size, $key:'xs');
+        font-weight: $formText-Weight;
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$formText-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$formText-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$formText-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$formText-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$formText-Size, $key:'xxl');
+        }
+    }
+
+    .submitButton {
+        background-color: $red;
+        font-size: map-get($map:$productText-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$productText-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$productText-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$productText-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$productText-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {}
+
+        color: $black;
+    }
+
+}
