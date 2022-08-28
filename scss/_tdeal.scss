@@ -1,0 +1,154 @@
+#main_tdeal {
+    grid-area: main_tdeal;
+
+
+    @include respond-to('lg') {
+        max-height: 50%;
+        overflow: hidden;
+        top: 5rem;
+    }
+
+
+
+    .productTitle {
+        font-weight: $product-Weight;
+        color: $black;
+        font-size: map-get($map:$product-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$product-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$product-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$product-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$product-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$product-Size, $key:'xxl');
+        }
+    }
+
+    .categoryTitle {
+        font-weight: $category-Weight;
+        color: $black;
+        font-size: map-get($map:$category-Size, $key:'xs');
+
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$category-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$category-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$category-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$category-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$category-Size, $key:'xxl');
+        }
+    }
+
+    .sizeSelector {
+        font-weight: $category-Weight;
+        color: $black;
+        font-size: map-get($map:$size_Selector-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$size_Selector-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$size_Selector-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$size_Selector-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$size_Selector-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$size_Selector-Size, $key:'xxl');
+        }
+    }
+
+    .button_Text-Size {
+        width: 8rem;
+        height: 2.6rem;
+        font-weight: $button_size-Weight;
+        color: $black;
+        font-size: map-get($map:$button_size-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$button_size-Size, $key:'sm');
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$button_size-Size, $key:'md');
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$button_size-Size, $key:'lg');
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$button_size-Size, $key:'xl');
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$button_size-Size, $key:'xxl');
+        }
+
+        &:hover {
+            color: $white;
+        }
+
+    }
+
+
+    .favbutButtons {
+        @extend .button_Text-Size;
+        width: auto;
+        height: auto;
+        background-color: $red;
+        border: none;
+        font-weight: 300;
+    }
+
+}
+
+#aside_tdeal {
+    grid-area: aside_tdeal;
+
+    .imgWidth {
+        max-width: 100%;
+        // max-height: 100%;
+
+
+        @include respond-to('lg') {
+            height: 45rem;
+            object-fit: cover;
+        }
+
+    }
+
+
+}
+

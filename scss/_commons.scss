@@ -8,37 +8,58 @@ html {
 body {
     overflow-x: hidden;
     box-sizing: border-box;
-    
+
 }
 
 
 //GRID
 #body {
     display: grid;
-    grid-template-columns: repeat(1,auto);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: auto;
-    grid-template-areas: "header" "nav" "mainI" "footer"; 
-    
+    grid-template-areas: "header""nav""mainI""footer";
+
 }
 
 #bodyAboutUs {
     display: grid;
-    grid-template-columns: repeat(1,auto);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: auto;
-    grid-template-areas: "header" "nav" "main_aboutus" "footer"; 
+    grid-template-areas: "header""nav""main_aboutus""footer";
 }
 
-#bodyCategories{
+#bodyCategories {
     display: grid;
-    grid-template-columns: repeat(1,auto);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: auto;
-    grid-template-areas: "header" "nav" "main_categories" "footer"; 
+    grid-template-areas: "header""nav""main_categories""footer";
 }
 
 
-#bodyContact{
+#bodyContact {
     display: grid;
-    grid-template-columns: repeat(1,auto);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: auto;
-    grid-template-areas: "header" "nav" "main_contact" "footer"; 
+    grid-template-areas: "header""nav""main_contact""footer";
+}
+
+
+#bodyTdeal {
+
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: auto;
+    grid-template-areas: "header" "nav " "aside_tdeal" "main_tdeal"  "footer";
+
+
+    @include respond-to('md') {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "nav nav nav" "aside_tdeal aside_tdeal main_tdeal" "footer footer footer";
+
+    }
+
+
+
 }

@@ -38,6 +38,21 @@ body {
   grid-template-areas: "header" "nav" "main_contact" "footer";
 }
 
+#bodyTdeal {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: auto;
+  grid-template-areas: "header" "nav " "aside_tdeal" "main_tdeal" "footer";
+}
+@media (min-width: 768px) {
+  #bodyTdeal {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "nav nav nav" "aside_tdeal aside_tdeal main_tdeal" "footer footer footer";
+  }
+}
+
 #header {
   grid-area: header;
   background-color: #ffffff;
@@ -735,124 +750,124 @@ body {
   }
 }
 
-#bodyCategories {
+#main_categories {
   grid-area: main_categories;
 }
-#bodyCategories .casualLandImg {
+#main_categories .casualLandImg {
   width: 100%;
 }
 @media (min-width: 768px) {
-  #bodyCategories .casualLandImg {
+  #main_categories .casualLandImg {
     width: 90%;
   }
 }
-#bodyCategories .cardHidder {
+#main_categories .cardHidder {
   display: none;
 }
 @media (min-width: 768px) {
-  #bodyCategories .cardHidder {
+  #main_categories .cardHidder {
     display: flex;
   }
 }
-#bodyCategories .card-title {
+#main_categories .card-title {
   font-weight: 500;
   color: #000000;
   font-size: 1.5rem;
 }
 @media (min-width: 576px) {
-  #bodyCategories .card-title {
+  #main_categories .card-title {
     font-size: 1.8rem;
   }
 }
 @media (min-width: 768px) {
-  #bodyCategories .card-title {
+  #main_categories .card-title {
     font-size: 2.1rem;
   }
 }
 @media (min-width: 992px) {
-  #bodyCategories .card-title {
+  #main_categories .card-title {
     font-size: 2.4rem;
   }
 }
 @media (min-width: 1200px) {
-  #bodyCategories .card-title {
+  #main_categories .card-title {
     font-size: 2.7rem;
   }
 }
 @media (min-width: 1400px) {
-  #bodyCategories .card-title {
+  #main_categories .card-title {
     font-size: 3rem;
   }
 }
-#bodyCategories .card-text {
+#main_categories .card-text {
   font-weight: 300;
   color: #000000;
   font-size: 1.15rem;
 }
 @media (min-width: 576px) {
-  #bodyCategories .card-text {
+  #main_categories .card-text {
     font-size: 1.15rem;
   }
 }
 @media (min-width: 768px) {
-  #bodyCategories .card-text {
+  #main_categories .card-text {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 992px) {
-  #bodyCategories .card-text {
+  #main_categories .card-text {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 1200px) {
-  #bodyCategories .card-text {
+  #main_categories .card-text {
     font-size: 1.8rem;
   }
 }
-#bodyCategories .btn-Color {
+#main_categories .btn-Color {
   background-color: #ED181F;
   font-size: 1.15rem;
   color: #000000;
 }
 @media (min-width: 576px) {
-  #bodyCategories .btn-Color {
+  #main_categories .btn-Color {
     font-size: 1.15rem;
   }
 }
 @media (min-width: 768px) {
-  #bodyCategories .btn-Color {
+  #main_categories .btn-Color {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 992px) {
-  #bodyCategories .btn-Color {
+  #main_categories .btn-Color {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 1200px) {
-  #bodyCategories .btn-Color {
+  #main_categories .btn-Color {
     font-size: 1.8rem;
   }
 }
 @media (min-width: 768px) {
-  #bodyCategories .cardWrapper {
+  #main_categories .cardWrapper {
     display: none;
   }
 }
-#bodyCategories .card-body {
+#main_categories .card-body {
   height: 28vh;
 }
 @media (min-width: 768px) {
-  #bodyCategories .card-body {
+  #main_categories .card-body {
     height: 25vh;
   }
 }
 @media (min-width: 1200px) {
-  #bodyCategories .card-body {
-    height: 20vh;
+  #main_categories .card-body {
+    height: 24vh;
   }
 }
-#bodyCategories .imageWrapper img {
+#main_categories .imageWrapper img {
   max-width: 100%;
 }
 
@@ -1105,6 +1120,162 @@ body {
     font-size: 1.8rem;
   }
 }
+#main_tdeal {
+  grid-area: main_tdeal;
+}
+@media (min-width: 992px) {
+  #main_tdeal {
+    max-height: 50%;
+    overflow: hidden;
+    top: 5rem;
+  }
+}
+#main_tdeal .productTitle {
+  font-weight: 600;
+  color: #000000;
+  font-size: 2rem;
+}
+@media (min-width: 576px) {
+  #main_tdeal .productTitle {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_tdeal .productTitle {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_tdeal .productTitle {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_tdeal .productTitle {
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_tdeal .productTitle {
+    font-size: 3.5rem;
+  }
+}
+#main_tdeal .categoryTitle {
+  font-weight: 300;
+  color: #000000;
+  font-size: 1.8rem;
+}
+@media (min-width: 576px) {
+  #main_tdeal .categoryTitle {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_tdeal .categoryTitle {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_tdeal .categoryTitle {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_tdeal .categoryTitle {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_tdeal .categoryTitle {
+    font-size: 2.8rem;
+  }
+}
+#main_tdeal .sizeSelector {
+  font-weight: 300;
+  color: #000000;
+  font-size: 1.3rem;
+}
+@media (min-width: 576px) {
+  #main_tdeal .sizeSelector {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_tdeal .sizeSelector {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_tdeal .sizeSelector {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_tdeal .sizeSelector {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_tdeal .sizeSelector {
+    font-size: 2.1rem;
+  }
+}
+#main_tdeal .button_Text-Size, #main_tdeal .favbutButtons {
+  width: 8rem;
+  height: 2.6rem;
+  font-weight: 200;
+  color: #000000;
+  font-size: 1.2rem;
+}
+@media (min-width: 576px) {
+  #main_tdeal .button_Text-Size, #main_tdeal .favbutButtons {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  #main_tdeal .button_Text-Size, #main_tdeal .favbutButtons {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  #main_tdeal .button_Text-Size, #main_tdeal .favbutButtons {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main_tdeal .button_Text-Size, #main_tdeal .favbutButtons {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  #main_tdeal .button_Text-Size, #main_tdeal .favbutButtons {
+    font-size: 1.5rem;
+  }
+}
+#main_tdeal .button_Text-Size:hover, #main_tdeal .favbutButtons:hover {
+  color: #ffffff;
+}
+#main_tdeal .favbutButtons {
+  width: auto;
+  height: auto;
+  background-color: #ED181F;
+  border: none;
+  font-weight: 300;
+}
+
+#aside_tdeal {
+  grid-area: aside_tdeal;
+}
+#aside_tdeal .imgWidth {
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  #aside_tdeal .imgWidth {
+    height: 45rem;
+    object-fit: cover;
+  }
+}
+
 #footer {
   grid-area: footer;
   background-color: #000000;

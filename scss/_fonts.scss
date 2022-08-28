@@ -58,7 +58,7 @@ $footerSelection-Size: (
 );
 
 
-//index main
+//Index
 $landing-Size: (
     'xs':  2.5rem,
     'sm':  2.8rem,
@@ -123,7 +123,7 @@ $textSection-Size: (
 $textSection-Weight: 300;
 
 
-//index about us
+//About us
 $anboutusHeader-Size: (
     'xs':  3rem,
     'sm':  3.2rem,
@@ -158,7 +158,7 @@ $aboutusText-Size: (
 
 $aboutusText-Weight: 300;
 
-//index categories
+//Categories
 $productHeader-Size: (
     'xs':  1.5rem,
     'sm':  1.8rem,
@@ -181,7 +181,7 @@ $productText-Size:(
 $productText-Weight: 300;
 
 
-//Index Contact
+//Contact
 $FAQ-Size: (
     'xs':  2.5rem,
     'sm':  2.8rem,
@@ -241,3 +241,44 @@ $formText-Size: (
     'xxl':  1.6rem
 );
 $formText-Weight: 300;
+
+//Today's deal
+$product-Size: (
+    'xs':  2rem,
+    'sm':  2.5rem,
+    'md': 2.8rem,
+    'lg':  3rem,
+    'xl': 3.2rem,
+    'xxl':  3.5rem
+);
+$product-Weight: 600;
+
+$category-Size: (
+    'xs':  1.8rem,
+    'sm':  2.3rem,
+    'md': 2.4rem,
+    'lg':  2.5rem,
+    'xl': 2.7rem,
+    'xxl':  2.8rem
+);
+$category-Weight: 300;
+
+$size_Selector-Size: (
+    'xs':  1.3rem,
+    'sm':  1.5rem,
+    'md': 1.7rem,
+    'lg':  1.9rem,
+    'xl': 2rem,
+    'xxl':  2.1rem
+);
+$size_Selector-Weight: 200;
+
+$button_size-Size: (
+    'xs':  1.2rem,
+    'sm':  1.2rem,
+    'md': 1.3rem,
+    'lg':  1.3rem,
+    'xl': 1.5rem,
+    'xxl':  1.5rem
+);
+$button_size-Weight: 200;

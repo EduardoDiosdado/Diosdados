@@ -1,4 +1,4 @@
-#bodyCategories {
+#main_categories {
     grid-area: main_categories;
 
 
@@ -107,7 +107,7 @@
                 height: 25vh;
             }
             @include respond-to('xl') {
-                height: 20vh;
+                height: 24vh;
             }
 
         }
