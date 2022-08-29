@@ -1,24 +1,54 @@
 #main {
     grid-area: mainI;
 
-    .landing{
-        background-color: $red; 
+    .landing {
+        background-color: $red;
         height: 50vh;
-     }
+    }
 
 
     @keyframes landingcarousler {
-    0% {background-image: url(../img/index/IndexLand1.jpg);  background-repeat: no-repeat; background-size:cover; background-position: center;}
-    25% {background-image: url(../img/index/IndexLand2.jpg);  background-repeat: no-repeat; background-size:cover; background-position: center;}
-    50% {background-image: url(../img/index/IndexLand3.jpg);  background-repeat: no-repeat; background-size:cover; background-position: center;}
-    75% {background-image: url(../img/index/IndexLand4.jpg);  background-repeat: no-repeat; background-size:cover; background-position: center;}
-    100% {background-image: url(../img/index/IndexLand1.jpg);  background-repeat: no-repeat; background-size:cover; background-position: center;}
+        0% {
+            background-image: url(../img/index/IndexLand1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        25% {
+            background-image: url(../img/index/IndexLand2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        50% {
+            background-image: url(../img/index/IndexLand3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        75% {
+            background-image: url(../img/index/IndexLand4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        100% {
+            background-image: url(../img/index/IndexLand1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
 
     }
 
-    .CarouselLabel{
+    .CarouselLabel {
         height: 50%;
-        @include respond-to('md'){
+
+        @include respond-to('md') {
             height: 100%;
         }
     }
@@ -28,36 +58,42 @@
         animation-duration: 15s;
         animation-iteration-count: infinite;
         height: 50%;
-        @include respond-to('md'){
+
+        @include respond-to('md') {
             height: 100%;
         }
-        
+
     }
 
     .landing_Label--font {
         text-align: center;
         font-weight: $landing-Weight;
-        font-size: map-get($map:$landing-Size,$key:'xs');
+        font-size: map-get($map:$landing-Size, $key:'xs');
         color: $black;
         display: inline-block;
         margin: auto;
-        @include respond-to('sm'){
-            font-size: map-get($map:$landing-Size,$key:'sm');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$landing-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$landing-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$landing-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$landing-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$landing-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$landing-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$landing-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$landing-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$landing-Size, $key:'xxl');
         }
     }
-    
+
     .button_BuyImg--Specs {
         width: 10rem;
         height: 10rem;
@@ -65,16 +101,17 @@
         border: none;
         background-color: $white;
 
-        @include respond-to('sm'){
+        @include respond-to('sm') {
             width: 12rem;
-            height: 12rem;}
-      
-        @include respond-to('lg'){
+            height: 12rem;
+        }
+
+        @include respond-to('lg') {
             width: 14rem;
             height: 14rem;
         }
-      
-        @include respond-to('xxl'){
+
+        @include respond-to('xxl') {
             width: 15.5rem;
             height: 15.5rem;
         }
@@ -83,7 +120,7 @@
     .section {
         background-color: $grey;
         box-sizing: content-box;
-        
+
     }
 
     .cardSzing {
@@ -94,157 +131,137 @@
 
 
     .headerFeatured_Label--sizing {
-        font-size: map-get($map:$featured-Size,$key:'xs');
+        font-size: map-get($map:$featured-Size, $key:'xs');
         font-weight: $featured-Weight;
         color: $black;
-        @include respond-to('sm'){
-            font-size: map-get($map:$featured-Size,$key:'sm');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$featured-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$featured-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$featured-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$featured-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$featured-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$featured-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$featured-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$featured-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$featured-Size, $key:'xxl');
         }
-       
+
     }
 
     .articles_LabeTitle--sizing {
         font-weight: $articlesT-Weight;
         color: $black;
-        font-size: map-get($map:$articlesT-Size,$key:'xs');
-        @include respond-to('sm'){
-            font-size: map-get($map:$articlesT-Size,$key:'sm');
+        font-size: map-get($map:$articlesT-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$articlesT-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$articlesT-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$articlesT-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$articlesT-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$articlesT-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$articlesT-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$articlesT-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$articlesT-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$articlesT-Size, $key:'xxl');
         }
     }
-    
+
     .articles_LabeText--sizing {
         font-weight: $articles-Weight;
         color: $black;
-        font-size: map-get($map:$articles-Size,$key:'xs');
-        @include respond-to('sm'){
-            font-size: map-get($map:$articles-Size,$key:'sm');
+        font-size: map-get($map:$articles-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$articles-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$articles-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$articles-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$articles-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$articles-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$articles-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$articles-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$articles-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$articles-Size, $key:'xxl');
         }
     }
-    
-    
+
+
     .adds {
         background-color: $red;
         height: 30vh;
-        @include respond-to('md'){
+
+        @include respond-to('md') {
             height: 40vh;
         }
     }
-    
-    .addsLabel--font {
-        font-weight: $adds-Weight;
-        color: $black;
-        font-size: map-get($map:$adds-Size,$key:'xs');
-        @include respond-to('sm'){
-            font-size: map-get($map:$adds-Size,$key:'sm');
-        }
-        @include respond-to('md'){
-            font-size: map-get($map:$adds-Size,$key:'md');
-        }
-        @include respond-to('lg'){
-            font-size: map-get($map:$adds-Size,$key:'lg');
-        }
-        @include respond-to('xl'){
-            font-size: map-get($map:$adds-Size,$key:'xl');
-        }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$adds-Size,$key:'xxl');
-        }
-    }
-    
-    .iframe {
-        border-radius: 0; 
-        width: 100%;
-        @include respond-to('md'){
-            width: 85%;
-        }
-        @include respond-to('lg'){
-            width: 70%;
-        }
 
-    }
-    
-    
-    .textSection{ 
+
+
+    .textSection {
+        background-color: $red;
         display: flex;
         flex-direction: start;
-        height: 40vh;
+        height: 45vh;
     }
-    
-    
+
+
     .textSection_Paragraphs--font {
         width: 35%;
         font-weight: $textSection-Weight;
-        font-size: map-get($map:$textSection-Size,$key:'xs');
-        @include respond-to('sm'){
-            font-size: map-get($map:$textSection-Size,$key:'sm');
+        font-size: map-get($map:$textSection-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$textSection-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$textSection-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$textSection-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$textSection-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$textSection-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$textSection-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$textSection-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$textSection-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$textSection-Size, $key:'xxl');
         }
-    
+
     }
-    
+
     .textSectionMobileHide {
         display: none;
-        @include respond-to('md'){
+        background-color: $red;
+
+        @include respond-to('md') {
             display: flex;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

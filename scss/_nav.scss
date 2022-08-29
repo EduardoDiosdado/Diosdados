@@ -2,98 +2,112 @@
     grid-area: nav;
     z-index: 100;
     background-color: $black;
-    @include respond-to('md'){
+
+    @include respond-to('md') {
         height: 9vh;
     }
-   
+
 
     .nav_LabelActive-font {
         color: $greyActive;
         font-weight: $navlabels-Weight;
-        font-size: map-get($map:$navlabel-Size , $key:'xs' );
-        @include respond-to('sm'){
-            font-size: map-get($map:$navlabel-Size , $key:'sm' )
-        }
-        @include respond-to('md'){
-            font-size: map-get($map:$navlabel-Size  , $key:'md' )
-        }
-        @include respond-to('lg'){
-            font-size: map-get($map:$navlabel-Size  , $key:'lg' )
-        }
-        @include respond-to('xl'){
-            font-size: map-get($map:$navlabel-Size  , $key:'xl' )
-        }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$navlabel-Size  , $key:'xxl' )
-        }
-        &:hover{ font-weight: $navlabels-Weight-hover;}
+        font-size: map-get($map:$navlabel-Size, $key:'xs');
 
-         
+        @include respond-to('sm') {
+            font-size: map-get($map:$navlabel-Size, $key:'sm')
+        }
+
+        @include respond-to('md') {
+            font-size: map-get($map:$navlabel-Size, $key:'md')
+        }
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$navlabel-Size, $key:'lg')
+        }
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$navlabel-Size, $key:'xl')
+        }
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$navlabel-Size, $key:'xxl')
+        }
+
+        &:hover {
+            font-weight: $navlabels-Weight-hover;
+        }
+
+
     }
 
-    .nav_Labels-font{
+    .nav_Labels-font {
         @extend .nav_LabelActive-font;
         color: $white;
     }
-   
 
-    input[type=search]{
-        font-size: map-get($map:$navSearchBar-Size , $key:'xs' );
-        @include respond-to('sm'){
-            font-size: map-get($map:$navSearchBar-Size , $key:'sm' )
+
+    input[type=search] {
+        font-size: map-get($map:$navSearchBar-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'sm')
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$navSearchBar-Size  , $key:'md' )
+
+        @include respond-to('md') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'md')
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$navSearchBar-Size  , $key:'lg' )
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'lg')
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$navSearchBar-Size  , $key:'xl' )
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'xl')
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$navSearchBar-Size , $key:'xxl' )
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'xxl')
         }
+
         color: $black;
 
     }
 
 
-    button[type=submit]{
-        font-size: map-get($map:$navSearchBar-Size , $key:'xs' );
-        @include respond-to('sm'){
-            font-size: map-get($map:$navSearchBar-Size , $key:'sm' )
+    button[type=submit] {
+        font-size: map-get($map:$navSearchBar-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'sm')
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$navSearchBar-Size  , $key:'md' )
+
+        @include respond-to('md') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'md')
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$navSearchBar-Size  , $key:'lg' )
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'lg')
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$navSearchBar-Size  , $key:'xl' )
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'xl')
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$navSearchBar-Size , $key:'xxl' )
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$navSearchBar-Size, $key:'xxl')
         }
+
         color: $black;
 
     }
-    
+
     .collapsed_nav-item {
         text-align: center;
     }
-    
-    
-    
-    
-  
+
+
+
+
+
 
 }
-
-
-
-
-
-
-

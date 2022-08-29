@@ -1,28 +1,30 @@
 #main_aboutus {
     grid-area: main_aboutus;
-    
+
     .aboutusLand {
 
         position: relative;
         text-align: center;
         height: 30vh;
         overflow: hidden;
-       @include respond-to('md'){
-        height: 60vh;
-       }
-       @include respond-to('lg'){
-        height: 80vh;
-       }
-        
-    
+
+        @include respond-to('md') {
+            height: 60vh;
+        }
+
+        @include respond-to('lg') {
+            height: 80vh;
+        }
+
+
     }
-    
+
     .aboutusVideo--styling {
         height: auto;
         width: 100vw;
     }
-    
-    
+
+
     .aboutusHeader--font {
         position: absolute;
         top: 50%;
@@ -31,104 +33,124 @@
         width: 100%;
         z-index: 2;
         color: $white;
-        font-size: map-get($map:$anboutusHeader-Size , $key:'xs');
+        font-size: map-get($map:$anboutusHeader-Size, $key:'xs');
         font-weight: $anboutusHeader-Weight;
-        @include respond-to('sm'){
-            font-size: map-get($map:$anboutusHeader-Size,$key:'sm');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$anboutusHeader-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$anboutusHeader-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$anboutusHeader-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$anboutusHeader-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$anboutusHeader-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$anboutusHeader-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$anboutusHeader-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$anboutusHeader-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$anboutusHeader-Size, $key:'xxl');
         }
     }
-    
-    
-    
+
+
+
     .aboutUsText {
         height: 95vh;
-    } 
-    
+    }
+
     .aboutDiosdados--font {
         font-weight: $anboutusTitles-Weight;
-        font-size: map-get($map:$anboutusTitles-Size , $key:'xs');
-        @include respond-to('sm'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'sm');
+        font-size: map-get($map:$anboutusTitles-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'xxl');
         }
     }
-    
+
     .aboutUsDescp--font {
         font-weight: $aboutusText-Weight;
-        font-size: map-get($map:$aboutusText-Size , $key:'xs');
-        @include respond-to('sm'){
-            font-size: map-get($map:$aboutusText-Size,$key:'sm');
+        font-size: map-get($map:$aboutusText-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$aboutusText-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$aboutusText-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$aboutusText-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$aboutusText-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$aboutusText-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$aboutusText-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$aboutusText-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$aboutusText-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$aboutusText-Size, $key:'xxl');
         }
     }
-    
+
     .mission {
         height: 95vh;
         background-color: $grey;
-       
-    
+
+
     }
-    
-   
-    
+
+
+
     .missionIMG--sizing {
         width: 100%;
     }
-    
+
     .missionHeader--font {
         font-weight: $anboutusTitles-Weight;
-        font-size: map-get($map:$anboutusTitles-Size , $key:'xs');
-        @include respond-to('sm'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'sm');
+        font-size: map-get($map:$anboutusTitles-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$anboutusTitles-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$anboutusTitles-Size, $key:'xxl');
         }
     }
-    
+
     .missionHr--styling {
         border: 0;
         border-top: .2rem solid $red;
@@ -138,90 +160,97 @@
         width: 7rem;
 
     }
-    
+
     .missionDescp--font {
         font-weight: $aboutusText-Weight;
-        font-size: map-get($map:$aboutusText-Size , $key:'xs');
-        @include respond-to('sm'){
-            font-size: map-get($map:$aboutusText-Size,$key:'sm');
+        font-size: map-get($map:$aboutusText-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$aboutusText-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$aboutusText-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$aboutusText-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$aboutusText-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$aboutusText-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$aboutusText-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$aboutusText-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$aboutusText-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$aboutusText-Size, $key:'xxl');
         }
     }
-    
-    
+
+
     .vision {
         @extend .mission;
-       
-    
+
+
     }
-    
-    
-    
+
+
+
     .visionIMG--sizing {
         width: 100%;
     }
-    
+
     .visionHeader--font {
         @extend .missionHeader--font;
     }
-    
+
     .visionHr--styling {
-       @extend .missionHr--styling;
+        @extend .missionHr--styling;
     }
-    
+
     .visionDescp--font {
         @extend .missionDescp--font;
     }
-    
 
-    .textSection{ 
+
+    .textSection {
         display: flex;
         flex-direction: start;
         height: 40vh;
     }
-    
-    
+
+
     .textSection_Paragraphs--font {
         width: 35%;
         font-weight: $textSection-Weight;
-        font-size: map-get($map:$textSection-Size,$key:'xs');
-        @include respond-to('sm'){
-            font-size: map-get($map:$textSection-Size,$key:'sm');
+        font-size: map-get($map:$textSection-Size, $key:'xs');
+
+        @include respond-to('sm') {
+            font-size: map-get($map:$textSection-Size, $key:'sm');
         }
-        @include respond-to('md'){
-            font-size: map-get($map:$textSection-Size,$key:'md');
+
+        @include respond-to('md') {
+            font-size: map-get($map:$textSection-Size, $key:'md');
         }
-        @include respond-to('lg'){
-            font-size: map-get($map:$textSection-Size,$key:'lg');
+
+        @include respond-to('lg') {
+            font-size: map-get($map:$textSection-Size, $key:'lg');
         }
-        @include respond-to('xl'){
-            font-size: map-get($map:$textSection-Size,$key:'xl');
+
+        @include respond-to('xl') {
+            font-size: map-get($map:$textSection-Size, $key:'xl');
         }
-        @include respond-to('xxl'){
-            font-size: map-get($map:$textSection-Size,$key:'xxl');
+
+        @include respond-to('xxl') {
+            font-size: map-get($map:$textSection-Size, $key:'xxl');
         }
-    
+
     }
-    
+
     .textSectionMobileHide {
         display: none;
-        @include respond-to('md'){
+
+        @include respond-to('md') {
             display: flex;
         }
     }
 }
-
-
-
-
