@@ -1234,6 +1234,15 @@ body {
   }
 }
 
+.errorPageHeight {
+  height: 100vh;
+}
+
+.svgData {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 #footer {
   grid-area: footer;
   background-color: #000000;
